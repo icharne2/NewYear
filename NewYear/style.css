@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Geometria-Light;
+    src: url("FONTY/Geometria-Light.ttf");
+}
+
+@font-face {
+    font-family: Geometria;
+    src: url("FONTY/Geometria.ttf");
+}
+
+@font-face {
+    font-family: Kunstler-Script;
+    src: url("FONTY/Kunstler-Script.TTF");
+}
+
+body{
+    font-family: Geometria-Light, sans-serif;
+    background-color: #EFEBDF;
+}
+
+header{
+    width: 100%;
+    height: 140px;
+    background-color: #16191E;
+    color: #EFEBDF;
+}
+
+#left{
+    float: left;
+    width: 70%;
+}
+
+#left div{
+    padding: 20px 10px;
+    float: left;
+}
+
+#left div>h1{
+    font-family: Geometria, sans-serif ;
+}
+
+#left div>h2{
+    font-family: Kunstler-Script, serif ;
+}
+
+#left img{
+    height: 100px;
+    margin-left: 40px;
+    margin-top: 10px;
+    float: left;
+}
+
+#right{
+    padding-top: 20px;
+    float: left;
+    width: 30%;
+}
+
+nav{
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    height: 100px;
+    position: sticky;
+    padding: 5px;
+    background-color: #EFEBDF;
+    top: 0;
+}
+
+ul{
+    list-style: none;
+    width: 100%;
+    height: 100px;
+    padding-top: 15px;
+}
+
+li{
+    float: left;
+    display: block;
+    text-transform: uppercase;
+    border: 2px solid #DF8D44;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 15px 10px;
+    width: 200px;
+}
+
+li:hover{
+    background-color: #DF8D44;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    padding: 5px;
+    display: block;
+}
+
+a:hover{
+    color: #EFEBDF;
+}
+
+form{
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+textarea{
+    width: 400px;
+    height: 80px;
+    padding: 5px;
+}
+
+input{
+    padding: 2px 5px;
+    font-weight: bold;
+}
+
+.przycisk{
+    border: 2px solid #DF8D44;
+}
+
+.p1{
+    display: inline;
+}
+
+main{
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    height: auto;
+}
+
+main h2{
+    padding-bottom: 20px;
+}
+
+#cointainer{
+    width: 100%;
+    display: flex;
+}
+
+#cointainer div{
+    padding: 20px 20px;
+    float: left;
+    width: 30%;
+}
+
+#cointainer div> h3{
+    padding-bottom: 20px;
+}
+
+footer{
+    background-color: #16191E;
+    width: 100%;
+    height: 80px;
+    color: #EFEBDF;
+    text-align: center;
+    line-height: 80px;
+}

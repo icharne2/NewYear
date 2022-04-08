@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZSE | NOWY ROK</title>
+    <meta name="author" content="Meg Paskowski">
+    <link rel="icon" href="OBRAZY/favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="left">
+            <img src="OBRAZY/logo.png" alt="logo">
+            <div>
+                <h1>NOWY ROK BEŻY</h1>
+                <h2>Wszystkiego, co najlepsze niech przyniesie Wszystkim!</h2>
+            </div>
+        </div>
+        <div id="right">
+            <p>Jest, <span id="dzien"></span> godzina: <span id="godzinka"></span></p>
+            <p>Do końca roku pozostało: <span id="koniec"></span></p>
+            <p>Szykuj się na szaleństwo!</p>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">strona główna</a></li>
+            <li><a href="#">sylwester</a></li>
+            <li><a href="karnawal.html">karnawał</a></li>
+            <li><a href="#">rtykieta balu</a></li>
+            <li><a href="#">kontakt</a></li>
+        </ul>
+    </nav>
+    <main>
+            <h2>Wyjąkowy bal karnawałowy</h2>
+            <form>
+                <p>Wybierz ilość uczestników i statusbalu:</p>
+                <label>Ilość</label>
+                <input type="number" min="1" max="36" id="osoby" value="0">
+                <label>os </label>
+                <input type="checkbox" id="karta">
+                <label>Karta GOLDEN CLUB</label>
+                <br>
+                <label>Status balu: </label>
+                <input type="button" class="przycisk" value="DISCOPATY" onclick="policz(1)">
+                <input type="button" class="przycisk" value="NORMALPARTY" onclick="policz(2)">
+                <input type="button" class="przycisk" value="EXTREMEPARTY" onclick="policz(3)">
+                <input type="button" class="przycisk" value="VIP" onclick="policz(4)">
+                <br>
+                <label><b>Koszt: <span id="wynik">0</span>zł</b></label>
+                <input type="reset" onclick="res()" class="przycisk" value="RESET">
+                <a class="p1" href="mailto:nowyrok@zse.krakow.pl">
+                    <input type="button" class="przycisk" value="Napisz do nas">
+                </a>
+                <br>
+                <textarea placeholder="Martwi cię coś? Napisz do nas...Chętnie pomożemy zorganizwać dla Ciebie bal, którego nigdy nie zapomnisz:-)"></textarea>
+            </form>
+    </main>
+    <footer>
+        <p>Copyright &copy; ZSE 2021, klasa: 4i</p>
+    </footer>
+    <script src="odliczanie.js"></script>
+    <script src="kalkulacja.js"></script>
+</body>
+</html>
